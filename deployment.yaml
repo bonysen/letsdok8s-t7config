@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: letsdok8st7-deployment
   labels:
-    app: letsdok8st7
+    app: letsdok8s-t7app
   namespace: 
 spec:
   replicas: 2
@@ -17,10 +17,10 @@ spec:
     spec:
       containers:
       - name: letsdok8s-t7app
-        image: 
+        image: product:1
         ports:
         - containerPort: 8080
-      - name: letsdok8st7-db
-        image: 
-        ports:
-        - containerPort: 80
+      #- name: letsdok8st7-db
+      #  image: 
+      #  ports:
+      #  - containerPort: 80
