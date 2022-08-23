@@ -1,0 +1,12 @@
+apiVersion: apps/v1
+kind: Service
+metadata:
+  name: letsdok8st7-service
+  namespace: 
+spec:
+  selector:
+    app: letsdok8s-t7app
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 8080
